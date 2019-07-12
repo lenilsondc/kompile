@@ -1,7 +1,7 @@
 function Kompile(html, model) {
   var cur = 0;
   var code = 'var o=\'\';';
-  var rgx = /(<%=?)(.*)?%>/gm;
+  var rgx = /(<%=?)([^<]*)?%>/gm;
   var clean = function(i) {
     return i.replace(/\r?\n/gm, '\\n');
   };
